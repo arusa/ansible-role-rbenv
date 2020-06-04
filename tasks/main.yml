@@ -16,7 +16,7 @@
   tags: [rbenv]
 
 - include: ruby.yml
-  when: is_ruby_installed|failed
+  when: is_ruby_installed is failed
   tags: [rbenv]
 
 - include: gems.yml
